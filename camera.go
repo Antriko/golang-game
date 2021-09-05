@@ -25,9 +25,9 @@ func NewCustomCamera(zoom float64, rotationSpeed, zoomSpeed float32) *CustomCame
 	c.ZoomSpeed = zoomSpeed
 	c.Angle = rl.NewVector2(0.0, 0.0)
 	c.Camera = rl.Camera{} // Set the internal raylib CustomCamera
-	c.Camera.Position = rl.NewVector3(0.0, 32.0, 32.0)
+	c.Camera.Position = rl.NewVector3(0.0, 25.0, 35.0)
 	c.Camera.Up = rl.NewVector3(0.0, 1.0, 0.0)
-	c.Camera.FOVY = 100.0
+	c.Camera.FOVY = 15.0
 	c.Camera.Type = rl.CameraTypeOrthographic
 
 	// Set CustomCamera default values
